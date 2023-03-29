@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     
-    smoothScrollToElems('a.scroll-link');
+    smoothScrollToElems('.header nav a');
 
     new Swiper('.swiper', {
         slidesPerView: 'auto',
