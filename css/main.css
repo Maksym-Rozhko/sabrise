@@ -239,6 +239,57 @@
     height: 8px;
     background: #FFFFFF;
 }
+
+.principle {
+    padding-top: 120px;
+    padding-bottom: 170px;
+    background: url('../images/principle-bg.png') no-repeat right top / auto;
+    background-color: #F6F7F9;
+}
+
+.principle h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #00676B;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.principle p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 60px;
+    max-width: 840px;
+}
+
+.principle__container {
+    display: flex;
+    gap: 60px;
+}
+
+.principle .content {
+    max-width: 516px;
+}
+
+.principle .content h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.principle .content p {
+    font-size: 16px;
+    line-height: 22px;
+}
 /* ANIMATION START */
 
 @keyframes show-main-title {

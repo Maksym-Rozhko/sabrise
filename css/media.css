@@ -40,6 +40,26 @@
     .mission__container {
         gap: 40px;
     }
+    .principle {
+        background-size: contain;
+    }
+    .principle__container {
+        gap: 30px;
+    }
+    .principle p {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+    .principle {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .principle .content h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -79,6 +99,17 @@
     .mission p {
         font-size: 14px;
         line-height: 22px;
+    }
+    .principle__container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .principle .content {
+        max-width: inherit;
+    }
+    .principle .image img {
+        max-width: 448px;
+        margin: 0 auto;
     }
 }
 
@@ -187,5 +218,34 @@
     .mission a {
         font-size: 10px;
         line-height: 14px;
+    }
+    .principle {
+        padding-top: 42px;
+        padding-bottom: 0;
+        background-position: right -100px top;
+    }
+    .principle .image {
+        display: none;
+    }
+    .principle h2 {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .principle p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    .principle .content h3 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .principle .content p {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
