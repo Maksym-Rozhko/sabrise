@@ -1,0 +1,125 @@
+.header {
+    padding-top: 22px;
+    background-color: #005458;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header nav a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out .4s;
+}
+
+.header nav a:hover {
+    color: #EBB297;
+    border-bottom: 1px solid #EBB297;
+}
+
+.header .mail-link,
+.main-screen .mail-link {
+    font-family: 'Roboto', sans-serif;
+    height: fit-content;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #244454;
+    padding: 10px 14px;
+    background-color: #EBB297;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all ease-in-out .4s;
+}
+
+.header .mail-link:hover,
+.main-screen .mail-link:hover {
+    background-color: transparent;
+    border: 1px solid #EBB297;
+    color: #EBB297;
+}
+
+.main-screen {
+    background-color: #005458;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-screen__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-screen__container h1 {
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 56px;
+    position: relative;
+    animation: show-main-title 5s ease-in-out forwards;
+}
+
+.main-screen__container svg {
+    animation: scroll-down-arrow 3s ease-in-out infinite;
+}
+
+.main-screen .mail-link {
+    display: none;
+}
+
+/* ANIMATION START */
+
+@keyframes show-main-title {
+    0% {
+        opacity: 0;
+        bottom: -100%;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;    
+    }
+}
+
+@keyframes scroll-down-arrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* ANIMATION END */
