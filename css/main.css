@@ -227,6 +227,18 @@
 .mission .img-pack {
     display: none;
 }
+
+.banners .banner img {
+    max-height: 520px;
+    min-height: 160px;
+    object-fit: cover;
+}
+
+.banners .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+}
 /* ANIMATION START */
 
 @keyframes show-main-title {

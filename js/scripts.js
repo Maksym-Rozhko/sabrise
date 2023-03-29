@@ -30,21 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     smoothScrollToElems('.header nav a');
 
-    new Swiper('.swiper', {
-        slidesPerView: 'auto',
-        spaceBetween: 40,
-        centeredSlides: true,
+    new Swiper('.banners-slider.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
         speed: 1000,
-        mousewheel: true,
 
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
+        pagination: {
+            el: '.banners__pagin.swiper-pagination',
+            clickable: true,
         },
     });
 });
