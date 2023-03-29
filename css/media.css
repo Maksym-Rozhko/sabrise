@@ -20,6 +20,13 @@
         font-size: 47px;
         line-height: 54px;
     }
+    .brands {
+        padding-top: 70px;
+        padding-bottom: 106px;
+    }
+    .brands__container {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -65,5 +72,44 @@
     .main-screen .mail-link {
         font-size: 14px;
         line-height: 16px;
+    }
+    .brands {
+        background-image: url('../images/brands-mob-bg.jpg');
+        padding-top: 43px;
+        padding-bottom: 32px;
+    }
+    .brands .wrapper {
+        padding: 0 24px;
+    }
+    .brands__container {
+        margin: inherit;
+    }
+    .brands h2 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .brands img {
+        max-width: 244px;
+        margin: 0 auto;
+    }
+    
+    .brands h3 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-top: 340px;
+        margin-bottom: 3px;
+    }
+    
+    .brands p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .brands a {
+        font-size: 10px;
+        line-height: 14px;
     }
 }
