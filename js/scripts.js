@@ -12,15 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     anchor.addEventListener('click', (e) => {
                         e.preventDefault();
                         if (document.querySelector(blockID)) {
+                            if (anchor.parentElement.parentElement.classList.contains('menu-mob')) {
+                                modal.close('menu');
+                            }
                             document.querySelector(blockID).scrollIntoView({
                                 behavior: 'smooth',
                                 block: 'start'
                             });
-                        } else {
-                            try {
-                                localStorage.setItem('scrollTo', 'getStartedSteps');
-                            } catch (error) {}
-                            window.location.href = '/';
                         }
                     });
                 };
@@ -31,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     smoothScrollToElems('.header nav a');
+    smoothScrollToElems('.menu-modal nav a');
 
     new Swiper('.banners-slider.swiper', {
         slidesPerView: 1,
