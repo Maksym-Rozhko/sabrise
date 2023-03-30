@@ -147,6 +147,13 @@
     .manufacture .wrapper {
         padding: 0 20px
     }
+    .gallary {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .gallary .swiper-wrapper {
+        column-count: 2;
+    }
 }
 
 @media (max-width: 575px) {
@@ -374,6 +381,26 @@
     }
     .where .content .images img {
         max-width: 320px;
+    }
+    .gallary {
+        padding-top: 43px;
+        padding-bottom: 40px;
+    }
+    .gallary .wrapper {
+        padding: 0 16px;
+    }
+    .gallary .swiper-wrapper {
+        display: flex;
+        column-count: inherit;
+        gap: 0;
+    }
+    .gallary .image {
+        margin: 0 auto;
+    }
+    .gallary .image img {
+        height: 326px;
+        margin: 0 auto;
+        object-fit: cover;
     }
 }
 

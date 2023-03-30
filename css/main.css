@@ -446,6 +446,37 @@
     max-width: 515px;
 }
 
+.gallary {
+    padding-top: 130px;
+    padding-bottom: 200px;
+}
+
+.gallary .wrapper {
+    padding: 0 8px;
+}
+
+.gallary h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #00676B;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.gallary .swiper-wrapper {
+    display: block;
+    column-count: 3;
+    gap: 8px;
+}
+
+.gallary .image {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
 /* MODALS START */
 .graph-modal::before {
     content: none;
