@@ -154,6 +154,9 @@
     .gallary .swiper-wrapper {
         column-count: 2;
     }
+    .footer__container {
+        gap: 25px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -401,6 +404,26 @@
         height: 326px;
         margin: 0 auto;
         object-fit: cover;
+    }
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+    .footer__container {
+        gap: 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer .contacts {
+        margin-bottom: 24px;
+    }
+    .footer .support {
+        margin-bottom: 24px;
+    }
+    .footer .socials {
+        margin-left: 0;
+        gap: 12px;
     }
 }
 

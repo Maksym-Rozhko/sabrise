@@ -477,6 +477,77 @@
     margin-bottom: 8px;
 }
 
+.footer {
+    padding-top: 57px;
+    padding-bottom: 39px;
+}
+
+.footer__container {
+    max-width: 1134px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px 50px;
+}
+
+.footer strong,
+.footer .contacts a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.footer .contacts a {
+    display: block;
+    transition: all ease-in-out .4s;
+}
+
+.footer .contacts a:hover {
+    color: #005458;
+}
+
+.footer .support h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #00676B;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer .support a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    transition: all ease-in-out .4s;
+}
+
+.footer .support a:hover {
+    color: #005458;
+}
+
+.footer .socials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+}
+
+.footer .socials a {
+    transition: all ease-in-out .4s;
+}
+
+.footer .socials a:hover {
+    transform: scale(1.2);
+}
 /* MODALS START */
 .graph-modal::before {
     content: none;
