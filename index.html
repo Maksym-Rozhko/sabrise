@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="images/favicon.ico"/>
     <title>Sabrise</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/graph-modal.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -26,9 +27,9 @@
                         <li><a href="#where">Де знайти</a></li>
                     </ul>
                 </nav>
-                <a href="mailto:" class="mail-link">
+                <button class="mail-link" type="button" data-graph-path="form">
                     НАПІШІТЬ НАМ
-                </a>
+                </button>
             </div>
         </div>
     </heaader>
@@ -42,9 +43,9 @@
                     <svg width="16" height="89" viewBox="0 0 16 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 80.6863L14.59 79.2855L9 84.829V0.215698H7V84.829L1.42 79.2756L0 80.6863L8 88.634L16 80.6863Z" fill="white"/>
                     </svg>     
-                    <a href="mailto:" class="mail-link">
+                    <button class="mail-link" type="button" data-graph-path="form">
                         НАПІШІТЬ НАМ
-                    </a>    
+                    </button>
                 </div>           
             </div>
         </section>
@@ -187,6 +188,37 @@
             </div>
         </section>
     </main>
+
+    <div class="graph-modal">
+        <div class="graph-modal__container form-modal" role="dialog" aria-modal="true" data-graph-target="form">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрийте модальне вікно"></button>
+            <div class="graph-modal__content">
+                <h2>
+                    Якщо ви не знайшли на сторінці відповідь на ваше питання, можете спитати тут
+                </h2>
+                <form action="#" method="POST" class="form">
+                    <textarea name="question" placeholder="питання"></textarea>
+                    <input type="text" name="name" placeholder="ім’я" required>
+                    <input type="email" name="email" placeholder="електрона пошта" required>
+                    <button class="form__submit" type="submit">
+                        Відправити
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="graph-modal__container form-modal" role="dialog" aria-modal="true" data-graph-target="thanks">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрийте модальне вікно"></button>
+            <div class="graph-modal__content">
+                <h2>
+                    Дякую, ваше питання було прийнято!
+                </h2>
+                <p>
+                    Наш адміністратор вiдповiсть вам найближчим часом.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/graph-modal.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     

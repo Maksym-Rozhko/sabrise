@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const modal = new GraphModal();
+
     const smoothScrollToElems = (links) => {
         const anchorsLink = document.querySelectorAll(links);
       
@@ -40,4 +42,20 @@ document.addEventListener('DOMContentLoaded', () => {
             clickable: true,
         },
     });
+
+    const forms = document.querySelectorAll('.form');
+    
+    if (forms) {
+        forms.forEach(form => {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                if (modal.isOpen) {
+                    modal.close('form');
+                }
+                modal.open('thanks');
+                form.reset();
+                inputTime.value = currentTime;
+            });
+        });
+    }
 });

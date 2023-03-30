@@ -40,7 +40,8 @@
 }
 
 .header .mail-link,
-.main-screen .mail-link {
+.main-screen .mail-link,
+.graph-modal .form__submit {
     font-family: 'Roboto', sans-serif;
     height: fit-content;
     font-weight: 500;
@@ -53,11 +54,13 @@
     background-color: #EBB297;
     border: 1px solid transparent;
     border-radius: 4px;
+    cursor: pointer;
     transition: all ease-in-out .4s;
 }
 
 .header .mail-link:hover,
-.main-screen .mail-link:hover {
+.main-screen .mail-link:hover,
+.graph-modal .form__submit:hover {
     background-color: transparent;
     border: 1px solid #EBB297;
     color: #EBB297;
@@ -380,6 +383,60 @@
     transform: translate(-50%, -50%);
     opacity: 1;
 }
+
+
+/* MODALS START */
+.graph-modal .graph-modal__close {
+    background-image: url('../images/icons/close.svg');
+    top: 16px;
+    right: 16px;
+}
+.graph-modal .form-modal {
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 47px 40px 70px 40px;
+    max-width: 732px;
+}
+
+.graph-modal .form-modal h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.graph-modal .form-modal input,
+.graph-modal .form-modal textarea {
+    width: 100%;
+    background: #F4F3F1;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000;
+    display: block;
+    margin-bottom: 4px;
+    border: none;
+    outline-color: #005458;
+}
+
+.graph-modal .form-modal input::placeholder,
+.graph-modal .form-modal textarea::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.graph-modal .form-modal textarea {
+    resize: none;
+    min-height: 240px;
+}
+.graph-modal .form__submit {
+    margin-top: 24px;
+}
+/* MODALS END */
+
 /* ANIMATION START */
 
 @keyframes show-main-title {
