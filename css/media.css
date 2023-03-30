@@ -90,6 +90,9 @@
     .region:nth-child(7) img {
         max-width: 200px;
     }
+    .where .where__container {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
@@ -328,6 +331,49 @@
     .graph-modal .form__submit {
         width: 100%;
         margin-top: 0;
+    }
+    .where {
+        padding-top: 43px;
+        padding-bottom: 26px;
+    }
+    .where__container {
+        gap: 30px;
+    }
+    .where h2 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .where p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .where .store-link {
+        flex-direction: column;
+        margin-top: 0;
+        max-width: 312px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .where .store-link svg {
+        width: 100%;
+        height: 100%;
+    }
+    .where .store-link span {
+        margin-top: 0;
+        margin-left: auto;
+    }
+    .where .images img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .where .content .images img {
+        max-width: 320px;
     }
 }
 

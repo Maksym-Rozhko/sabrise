@@ -155,7 +155,8 @@
 }
 
 .brands a,
-.mission a {
+.mission a,
+.where .store-link span {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -165,7 +166,8 @@
 }
 
 .brands a::after,
-.mission a::after {
+.mission a::after,
+.where .store-link span::after {
     content: "";
     position: absolute;
     right: 0;
@@ -181,7 +183,8 @@
 }
 
 .brands a:hover::after,
-.mission a:hover::after {
+.mission a:hover::after,
+.where .store-link:hover span::after {
     transform: translateY(-50%) translateX(5px) scale(1.2);
 }
 
@@ -237,12 +240,6 @@
 
 .mission .img-pack {
     display: none;
-}
-
-.banners .banner img {
-    max-height: 520px;
-    min-height: 160px;
-    object-fit: cover;
 }
 
 .banners .swiper-pagination-bullet {
@@ -392,6 +389,62 @@
     opacity: 1;
 }
 
+.where {
+    padding-top: 74px;
+    padding-bottom: 77px;
+    background-color: #D5F1FD;
+}
+
+.where .where__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.where h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #00676B;
+    margin-top: 0;
+    margin-bottom: 14px;
+    margin-left: 30px;
+}
+
+.where p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 47px;
+    max-width: 476px;
+    margin-left: 30px;
+}
+
+.where .store-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-left: 30px;
+}
+
+.where .store-link span {
+    height: fit-content;
+    margin-top: 32px;
+    margin-left: 12px;
+}
+
+.where .images img {
+    max-width: 660px;
+}
+
+.where .content .images img {
+    border-radius: 40px;
+    max-width: 515px;
+}
 
 /* MODALS START */
 .graph-modal::before {
