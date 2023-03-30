@@ -147,6 +147,9 @@
 }
 
 @media (max-width: 575px) {
+    .burger {
+        display: block;
+    }
     .header .wrapper,
     .main-screen .wrapper {
         padding: 0 16px;

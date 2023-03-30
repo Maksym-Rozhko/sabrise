@@ -66,6 +66,14 @@
     color: #EBB297;
 }
 
+.burger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: none;
+}
+
 .main-screen {
     background-color: #005458;
     height: 100vh;
@@ -386,6 +394,9 @@
 
 
 /* MODALS START */
+.graph-modal::before {
+    content: none;
+}
 .graph-modal .graph-modal__close {
     background-image: url('../images/icons/close.svg');
     top: 16px;
@@ -434,6 +445,59 @@
 }
 .graph-modal .form__submit {
     margin-top: 24px;
+}
+
+.graph-modal .menu-modal {
+    margin: 0;
+    padding: 50px;
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+    background-color: #D9D9D9;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out .4s;
+}
+
+.graph-modal .menu-modal.graph-modal-open {
+    display: flex;
+}
+
+.graph-modal.is-open .menu-modal {
+    left: -100%;
+}
+
+.graph-modal.is-open .menu-modal.active {
+    left: 0;
+}
+
+.graph-modal .menu-modal .graph-modal__close {
+    top: 20px;
+    right: 56px;
+}
+
+.graph-modal .menu-modal nav ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.graph-modal .menu-modal nav li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.graph-modal .menu-modal nav a {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    transition: color ease-in-out .4s;
+}
+
+.graph-modal .menu-modal nav a:hover {
+    color: #005458;
 }
 /* MODALS END */
 

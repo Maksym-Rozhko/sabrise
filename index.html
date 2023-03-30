@@ -30,6 +30,11 @@
                 <button class="mail-link" type="button" data-graph-path="form">
                     НАПІШІТЬ НАМ
                 </button>
+                <button class="burger" type="button" data-graph-path="menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="white"/>
+                    </svg>                        
+                </button>
             </div>
         </div>
     </heaader>
@@ -191,7 +196,7 @@
 
     <div class="graph-modal">
         <div class="graph-modal__container form-modal" role="dialog" aria-modal="true" data-graph-target="form">
-            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрийте модальне вікно"></button>
+            <button class="graph-modal__close js-modal-close" aria-label="Закрийте модальне вікно"></button>
             <div class="graph-modal__content">
                 <h2>
                     Якщо ви не знайшли на сторінці відповідь на ваше питання, можете спитати тут
@@ -207,7 +212,7 @@
             </div>
         </div>
         <div class="graph-modal__container form-modal" role="dialog" aria-modal="true" data-graph-target="thanks">
-            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрийте модальне вікно"></button>
+            <button class="graph-modal__close js-modal-close" aria-label="Закрийте модальне вікно"></button>
             <div class="graph-modal__content">
                 <h2>
                     Дякую, ваше питання було прийнято!
@@ -215,6 +220,20 @@
                 <p>
                     Наш адміністратор вiдповiсть вам найближчим часом.
                 </p>
+            </div>
+        </div>
+        <div class="graph-modal__container menu-modal" role="dialog" aria-modal="true" data-graph-target="menu">
+            <button class="graph-modal__close" aria-label="Закрийте модальне вікно"></button>
+            <div class="graph-modal__content">
+                <nav>
+                    <ul>
+                        <li><a href="#mission">Місія</a></li>
+                        <li><a href="#brands">Наші бренди</a></li>
+                        <li><a href="#principle">Принципи роботи</a></li>
+                        <li><a href="#manufacture">Виробництво</a></li>
+                        <li><a href="#where">Де знайти</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>

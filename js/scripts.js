@@ -58,4 +58,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    const burgerElemBtn = document.querySelector('.burger');
+    const closeMenuElemBtn = document.querySelector('.menu-modal .graph-modal__close');
+    const modalMenu = document.querySelector('.menu-modal');
+
+    if (burgerElemBtn) {
+        burgerElemBtn.addEventListener('click', () => {
+            setTimeout(() => {
+                modalMenu.classList.add('active'); 
+            }, 500);
+        });
+    }
+
+    if (closeMenuElemBtn) {
+        closeMenuElemBtn.addEventListener('click', () => {
+            modalMenu.classList.remove('active'); 
+            setTimeout(() => {
+                modal.close('menu');
+            }, 500);
+        });
+    }
 });
